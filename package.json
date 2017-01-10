@@ -20,7 +20,7 @@
     "url": "https://github.com/jhermsmeier/rpi-test/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node server",
     "deploy": "scripts/deploy.sh"
   }

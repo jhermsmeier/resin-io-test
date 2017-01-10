@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-git up rpi1 master
-git up rpi2 master
-git up rpi3 master

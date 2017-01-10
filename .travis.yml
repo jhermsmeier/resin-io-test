@@ -5,3 +5,8 @@ notifications:
 node_js:
   - stable
 script: npm test
+deploy:
+  provider: script
+  script: scripts/deploy-travis
+  on:
+    branch: master

@@ -1,0 +1,25 @@
+{
+  "name": "rpi-test",
+  "version": "1.0.0",
+  "description": "Resin.io Raspberry Pi Test App",
+  "license": "MIT",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de/)",
+  "keywords": [],
+  "main": "server",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "homepage": "https://github.com/jhermsmeier/rpi-test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhermsmeier/rpi-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/rpi-test/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./deploy"
+  }
+}

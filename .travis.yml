@@ -5,8 +5,6 @@ notifications:
 node_js:
   - stable
 script:
-  - npm test
-before_install:
   # Start ssh-agent
   - eval "$(ssh-agent -s)"
   # Decrypt deployment key
@@ -16,7 +14,10 @@ before_install:
   - cp .travis/id_ed25519 ~/.ssh/id_ed25519
   - chmod 0600 ~/.ssh/id_ed25519
   - ssh-add ~/.ssh/id_ed25519
+  # Add resin.io to known hosts
   - cat .travis/known_hosts >> ~/.ssh/known_hosts
+  # Run tests...
+  - npm test
 deploy:
   provider: script
   script: scripts/deploy-travis.sh

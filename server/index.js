@@ -8,6 +8,7 @@ server.once( 'listening', function() {
 })
 
 server.on( 'request', function( req, res ) {
+  console.log( req.method, req.url )
   if( req.url === '/' ) {
     res.write( JSON.stringify( { host: os.hostname() }, null, 2 ) )
     res.end()

@@ -11,7 +11,7 @@ before_install:
   - eval "$(ssh-agent -s)"
   # Decrypt deployment key
   - openssl aes-256-cbc -K $encrypted_d95c70ccd684_key -iv $encrypted_d95c70ccd684_iv
-    -in id_ed25519.enc -out .travis/id_ed25519 -d
+    -in .travis/id_ed25519.enc -out .travis/id_ed25519 -d
   # Add deploy key
   - cp .travis/id_ed25519 ~/.ssh/id_ed25519
   - chmod 0600 ~/.ssh/id_ed25519

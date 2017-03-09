@@ -8,7 +8,7 @@
   "keywords": [],
   "main": "server",
   "dependencies": {
-    "sense-hat-led": "~1.0.1"
+    "sense-hat-led": "git+https://github.com/jhermsmeier/sense-hat-led.git"
   },
   "devDependencies": {},
   "peerDependencies": {},

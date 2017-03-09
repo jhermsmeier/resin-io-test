@@ -30,4 +30,4 @@ setInterval( function() {
   var image = Math.random() >= 0.5 ?
     blankScreen : questionMark
   sense.setPixels( image )
-})
+}, 1000 )

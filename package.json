@@ -7,7 +7,9 @@
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "keywords": [],
   "main": "server",
-  "dependencies": {},
+  "dependencies": {
+    "sense-hat-led": "~1.0.1"
+  },
   "devDependencies": {},
   "peerDependencies": {},
   "optionalDependencies": {},
@@ -21,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "node server",
+    "start": "node server/sense-cycle.js",
     "deploy": "scripts/deploy.sh"
   }
 }
